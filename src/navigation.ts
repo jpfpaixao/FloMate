@@ -39,12 +39,6 @@ export const footerData = {
         { text: 'info@flomate.co', href: 'mailto:info@flomate.co' },
       ],
     },
-    {
-      title: 'Socials',
-      links: [
-        { text: 'LinkedIn', href: 'https://linkedin.com/company/flomate' },
-      ],
-    },
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
