@@ -66,3 +66,61 @@ const seoProps: AstroSeoProps = merge(
 ---
 
 <AstroSeo {...{ ...seoProps, openGraph: await adaptOpenGraphImages(seoProps?.openGraph, Astro.site) }} />
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FlowMate",
+  "url": "https://flomate.co",
+  "description": "Digital consulting for operational excellence",
+  "image": "https://flomate.co/assets/images/default.png",
+  "sameAs": [
+    "https://linkedin.com"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hello@flomate.co",
+    "contactType": "Customer Service"
+  }
+}
+</script>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Operational Consulting",
+  "description": "Digital consulting for organizational efficiency and operational excellence",
+  "provider": {
+    "@type": "Organization",
+    "name": "FlowMate"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": ["Diagnosis", "Process Redesign", "Implementation", "Continuous Improvement"]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json" define:vars={{pathname: Astro.url.pathname}}>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://flomate.co"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": pathname === '/services' ? "Our Services" : pathname === '/about' ? "About Us" : pathname === '/contact' ? "Contact Us" : pathname === '/privacy' ? "Privacy Policy" : pathname === '/terms' ? "Terms & Conditions" : "Page",
+      "item": pathname === '/' ? "https://flomate.co" : `https://flomate.co${pathname}`
+    }
+  ]
+}
+</script>

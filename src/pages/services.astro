@@ -1,224 +1,279 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Our Services',
+  description: 'Operational consulting services including diagnosis, process redesign, implementation, and continuous improvement. We help you build systems that scale.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
+  <div slot="announcement"></div>
+
+  <!-- Hero Widget - Simplified ******* -->
 
   <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
-    }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
-    columns={3}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
-      },
-      {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
-        description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
-      },
-      {
-        title: 'Blog',
-        description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Business',
-        description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
-      },
-    ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    items={[
-      {
-        title: 'High-Quality Designs',
-        description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
-      },
-      {
-        title: 'Customization Tools',
-        description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Pre-Designed Elements',
-        description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'Time Savings',
-        description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
-      },
-      {
-        title: 'Professional Appearance',
-        description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Cost-Efficiency',
-        description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
-      },
-      {
-        title: 'Instant Download',
-        description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
-    </Fragment>
-  </Content>
-
-  <!-- Testimonials Widget *********** -->
-
-  <Testimonials
-    title="Words from real customers"
-    testimonials={[
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
-      },
-    ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/arthelokyo/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
+    title="How we help organizations build operations that scale"
+    subtitle="We partner with leadership teams to redesign and implement better ways of working."
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
+        text: 'Book a 30-minute discovery call',
+        href: 'https://calendly.com/jpfm-paixao/30min',
+        target: '_blank',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
   />
+
+  <div class="mx-auto max-w-3xl text-center mb-8 px-4">
+    <p class="text-muted dark:text-slate-400 text-sm">
+      Learn more about <a href="/about" class="text-blue-600 dark:text-blue-400 hover:underline">our approach</a> 
+      or <a href="/contact" class="text-blue-600 dark:text-blue-400 hover:underline">contact us</a> to discuss your situation.
+    </p>
+  </div>
+
+  <!-- Our Areas of Focus *********** -->
+
+  <Features2
+    title="Our areas of focus"
+    subtitle="Four core capabilities that work together to transform your operations"
+    columns={2}
+    items={[
+      {
+        title: 'Operational Diagnosis',
+        description:
+          'We map how work actually flows today, identify bottlenecks and delays, and clarify where growth is being constrained.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Process Redesign',
+        description:
+          'We redesign how work gets done so execution becomes faster, clearer, and more reliable. We simplify handovers and reduce unnecessary steps.',
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: 'Implementation & Enablement',
+        description:
+          "We don't stop at recommendations. We implement redesigned processes and support teams through adoption to ensure change sticks.",
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Continuous Improvement',
+        description:
+          "As your business evolves, your operations keep up. We monitor what's working and refine processes as volume and complexity increase.",
+        icon: 'tabler:refresh',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- How We Work - The Engagement Process -->
+
+  <Steps
+    title="How engagements typically unfold"
+    subtitle="Every engagement begins with understanding your context, then moving through clear phases of diagnosis, redesign, and implementation."
+    items={[
+      {
+        title: 'Discovery Call',
+        description: 'We listen. You tell us about your business, challenges, and objectives. No pressure, no pitch — just a conversation.',
+        icon: 'tabler:phone',
+      },
+      {
+        title: 'Operational Diagnosis',
+        description: 'We work with your team to map how operations actually work today. We identify where friction exists and where leverage exists.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Redesign & Planning',
+        description: 'Based on what we learned, we design how operations should work and create a clear implementation roadmap.',
+        icon: 'tabler:pencil',
+      },
+      {
+        title: 'Implementation',
+        description: 'We build the new operating model into day-to-day reality. We support adoption and ensure changes actually stick.',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      alt: 'Engagement Process',
+    }}
+  >
+    <Fragment slot="content">Operations that scale aren't built overnight — they're built through a structured, thoughtful process.</Fragment>
+  </Steps>
+
+  <div slot="before-footer" class="py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8">
+        <!-- Left Column: Contact Options -->
+        <div>
+          <h3 class="mb-2 text-2xl font-bold">Let's discuss your operations</h3>
+          <p class="mb-8 text-lg text-muted">If you're feeling operational friction or struggling to scale efficiently, a short conversation can clarify what comes next.</p>
+          
+          <div class="space-y-6">
+            <!-- Schedule -->
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900">
+                  <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold">Schedule a call</h4>
+                <p class="text-sm text-muted">30-minute discovery session</p>
+              </div>
+            </div>
+
+            <!-- Insights -->
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900">
+                  <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold">Practical insights</h4>
+                <p class="text-sm text-muted">Actionable recommendations</p>
+              </div>
+            </div>
+
+            <!-- Confidential -->
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900">
+                  <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold">Confidential</h4>
+                <p class="text-sm text-muted">No obligation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Calendly Widget -->
+        <div class="flex items-start justify-center">
+          <div class="w-full -mt-20">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/jpfm-paixao/30min" style="min-width:320px;height:900px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Section ******* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Common questions about our services and engagement process"
+    columns={1}
+    items={[
+      {
+        title: 'What does a typical engagement look like?',
+        description:
+          'Most engagements follow our four-phase process: Diagnosis (understand current state), Redesign (develop new operating model), Implementation (build and deploy), and Continuous Improvement (ongoing optimization). Typical engagements range from 3-12 months depending on complexity and scope.',
+      },
+      {
+        title: 'How long is a typical engagement?',
+        description:
+          'Engagements typically range from 3 to 12 months, depending on the scope of work and organizational complexity. We customize timelines based on your specific needs and resources. Shorter engagements focus on diagnosis and quick wins, while longer ones include full implementation and change management.',
+      },
+      {
+        title: 'What happens after the engagement ends?',
+        description:
+          'We hand off a fully operational model with documentation, training, and support. While we conclude the formal engagement, many clients choose to work with us on continuous improvement initiatives or expand into new areas. We always leave you with the knowledge and systems to maintain improvements independently.',
+      },
+      {
+        title: 'Do you work with companies of all sizes?',
+        description:
+          'We work best with organizations facing meaningful operational challenges—typically companies with 20+ employees experiencing growth friction. We focus on businesses where improved operations will have real financial impact.',
+      },
+      {
+        title: 'What if we don\'t have dedicated resources for the project?',
+        description:
+          'Resource constraints are common and we work around them. We can operate with part-time involvement from your team, adjust timelines, or structure work in phases. Our goal is to make the engagement work within your operational reality.',
+      },
+      {
+        title: 'How do you charge for services?',
+        description:
+          'We use value-based pricing customized to your situation. Typical engagement fees range widely based on scope, complexity, duration, and your organization size. We\'ll discuss pricing transparently during your discovery call and can structure payments to fit your budget.',
+      },
+    ]}
+  />
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does a typical engagement look like?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most engagements follow our four-phase process: Diagnosis (understand current state), Redesign (develop new operating model), Implementation (build and deploy), and Continuous Improvement (ongoing optimization). Typical engagements range from 3-12 months depending on complexity and scope."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long is a typical engagement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Engagements typically range from 3 to 12 months, depending on the scope of work and organizational complexity. We customize timelines based on your specific needs and resources."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens after the engagement ends?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We hand off a fully operational model with documentation, training, and support. While we conclude the formal engagement, many clients choose to work with us on continuous improvement initiatives or expand into new areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with companies of all sizes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We work best with organizations facing meaningful operational challenges—typically companies with 20+ employees experiencing growth friction. We focus on businesses where improved operations will have real financial impact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if we don't have dedicated resources for the project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Resource constraints are common and we work around them. We can operate with part-time involvement from your team, adjust timelines, or structure work in phases."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you charge for services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use value-based pricing customized to your situation. Typical engagement fees range widely based on scope, complexity, duration, and your organization size. We'll discuss pricing transparently during your discovery call."
+        }
+      }
+    ]
+  }
+  </script>
 </Layout>
+

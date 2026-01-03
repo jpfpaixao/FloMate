@@ -18,6 +18,16 @@
   .text-muted {
     color: var(--aw-color-text-muted);
   }
+  .aw-link-active {
+    @apply border-b-2 border-primary dark:border-blue-400;
+  }
+}
+
+@layer components {
+  /* Vertically center text with numbers in Steps2 */
+  li.flex.md\:-mx-4 {
+    @apply items-center;
+  }
 }
 
 @layer components {
@@ -35,6 +45,10 @@
 
   .btn-tertiary {
     @apply btn border-none shadow-none text-muted hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
+  }
+
+  .aw-link-active {
+    @apply border-b-2 border-primary dark:border-blue-400;
   }
 }
 

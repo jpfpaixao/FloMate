@@ -1,79 +1,113 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact Us',
+  description: 'Get in touch with FlowMate. We respond to all inquiries within 24 hours. Schedule a discovery call or email us to discuss your operational challenges.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <div slot="announcement"></div>
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <!-- Hero Widget ******************* -->
 
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
+  <Hero
+    title="Let's talk about your operations"
+    subtitle="We respond to all inquiries within 24 hours. Whether you want to book a discovery call, ask questions, or just explore if FlowMate is right for you — we're here to help."
+    actions={[
       {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
+        variant: 'primary',
+        text: 'Book a 30-minute discovery call',
+        href: 'https://calendly.com/jpfm-paixao/30min',
+        target: '_blank',
+        icon: 'tabler:calendar',
       },
     ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Contact Options *********** -->
 
   <Features2
-    title="We are here to help!"
+    title="Ways to reach us"
+    subtitle="Choose whatever works best for you"
+    columns={2}
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'Book a Discovery Call',
+        description: 'Schedule a 30-minute conversation. No sales pitch — just honest discussion about your situation and what might be possible.',
+        icon: 'tabler:calendar',
       },
       {
-        title: 'Contact sales',
+        title: 'Email us directly',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'contact@support.com',
+          'Send your questions or details about your business. We respond to all inquiries within 24 business hours.',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
+        title: 'Connect on LinkedIn',
+        description: 'Follow our company page for insights on operational excellence and business optimization.',
+        icon: 'tabler:brand-linkedin',
+      },
+      {
+        title: 'Learn about our work',
+        description:
+          'Not sure where to start? Explore our services or read about our approach and philosophy.',
+        icon: 'tabler:book',
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Contact Details *************** -->
+
+  <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid gap-12 md:grid-cols-2">
+      <!-- Email -->
+      <div>
+        <h3 class="mb-4 text-xl font-semibold">Email</h3>
+        <p class="mb-2">
+          <a href="mailto:hello@flomate.co" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold">hello@flomate.co</a>
+        </p>
+        <p class="text-sm text-muted dark:text-slate-500">
+          We respond to all inquiries within 24 business hours.
+        </p>
+      </div>
+
+      <!-- Calendly -->
+      <div>
+        <h3 class="mb-4 text-xl font-semibold">Schedule a Call</h3>
+        <p class="mb-2">
+          <a href="https://calendly.com/jpfm-paixao/30min" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold">Book a 30-minute discovery call →</a>
+        </p>
+        <p class="text-sm text-muted dark:text-slate-500">
+          Find a time that works for you. European business hours.
+        </p>
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="mt-12 border-t border-gray-200 dark:border-gray-700 pt-8">
+      <p class="text-center text-muted dark:text-slate-400">
+        Want to explore more? Check out <a href="/services" class="text-blue-600 dark:text-blue-400 hover:underline">how we work</a>, 
+        <a href="/about" class="text-blue-600 dark:text-blue-400 hover:underline">our approach</a>, 
+        or browse <a href="/" class="text-blue-600 dark:text-blue-400 hover:underline">our homepage</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Calendly Widget *************** -->
+
+  <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+    <h2 class="mb-8 text-center text-3xl font-bold">Pick a time</h2>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/jpfm-paixao/30min" style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
+  </div>
 </Layout>

@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: FlowMate
+  site: 'https://flomate.co'
   base: '/'
   trailingSlash: false
 
@@ -9,35 +9,30 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: FlowMate
+    template: '%s — FlowMate'
+  description: "Digital consulting for operational excellence. We help organizations build better ways of working through diagnosis, process redesign, implementation, and continuous improvement."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: FlowMate
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
-    cardType: summary_large_image
-
 i18n:
   language: en
   textDirection: ltr
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: false
     postsPerPage: 6
 
     post:
-      isEnabled: true
+      isEnabled: false
       permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
@@ -66,7 +61,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: 'G-REPLACE_WITH_YOUR_GA4_ID' # Replace with your GA4 measurement ID (format: G-XXXXXXXXXX)
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
