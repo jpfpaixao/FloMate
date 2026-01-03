@@ -39,6 +39,16 @@
     @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
   }
 
+  .btn-cta {
+    @apply btn font-semibold text-white border-none hover:opacity-90 dark:hover:opacity-90;
+    background-color: rgb(149 229 127);
+    color: #1a1a1a;
+  }
+
+  .btn-cta:hover {
+    background-color: rgb(130 220 105);
+  }
+
   .btn-secondary {
     @apply btn;
   }
