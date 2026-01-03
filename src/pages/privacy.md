@@ -9,8 +9,8 @@ _Last updated_: January 2, 2026
 **Company Information:**
 
 - **Company Name:** FlowMate
-- **Email:** [hello@flomate.co](mailto:hello@flomate.co)
-- **Data Protection Officer:** Available upon request at [hello@flomate.co](mailto:hello@flomate.co)
+- **Email:** [info@flomate.co](mailto:info@flomate.co)
+- **Data Protection Officer:** Available upon request at [info@flomate.co](mailto:info@flomate.co)
 
 ## Introduction
 
@@ -92,7 +92,7 @@ Depending on your location, you may have the right to:
 - **Opt-out**: Stop receiving communications from us
 - **Data Portability**: Receive your data in a portable format
 
-To exercise any of these rights, contact us at [hello@flomate.co](mailto:hello@flomate.co).
+To exercise any of these rights, contact us at [info@flomate.co](mailto:info@flomate.co).
 
 ## Cookies and Tracking
 
@@ -119,7 +119,7 @@ We may update this Privacy Policy from time to time. We will notify you of signi
 
 If you have questions about this Privacy Policy or how we handle your data, please contact us:
 
-**Email**: [hello@flomate.co](mailto:hello@flomate.co)
+**Email**: [info@flomate.co](mailto:info@flomate.co)
 
 **Address**: [Your Business Address]
 

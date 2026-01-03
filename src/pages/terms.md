@@ -15,7 +15,7 @@ These Terms are intended to comply with European law, including the General Data
 **Company Details:**
 
 - **Company Name:** FlowMate
-- **Contact Email:** [hello@flomate.co](mailto:hello@flomate.co)
+- **Contact Email:** [info@flomate.co](mailto:info@flomate.co)
 - **Business Address:** [To be completed with your address]
 - **Registration Number:** [To be completed]
 - **VAT Number:** [To be completed]
@@ -221,7 +221,7 @@ You have the right to:
 - Data portability
 - Lodge a complaint with your supervisory authority
 
-To exercise these rights, contact us at [hello@flomate.co](mailto:hello@flomate.co).
+To exercise these rights, contact us at [info@flomate.co](mailto:info@flomate.co).
 
 ### Data Retention
 
@@ -275,7 +275,7 @@ We may update these Terms at any time by posting the updated version on our webs
 
 For questions about these Terms, or to exercise your rights, please contact us:
 
-**Email:** [hello@flomate.co](mailto:hello@flomate.co)
+**Email:** [info@flomate.co](mailto:info@flomate.co)
 
 **Address:** [To be completed]
 

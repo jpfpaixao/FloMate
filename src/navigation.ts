@@ -36,7 +36,7 @@ export const footerData = {
     {
       title: 'Contact Us',
       links: [
-        { text: 'hello@flomate.co', href: 'mailto:hello@flomate.co' },
+        { text: 'info@flomate.co', href: 'mailto:info@flomate.co' },
       ],
     },
     {
