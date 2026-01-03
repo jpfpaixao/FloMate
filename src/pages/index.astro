@@ -7,7 +7,6 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
 
 const metadata = {
   title: 'We Build the Operational Engine That Scales Your Business',
@@ -101,7 +100,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" style="background-color: rgba(55, 147, 223, 0.05);"></div>
     </Fragment>
   </Content>
 
@@ -188,7 +187,7 @@ const metadata = {
     }}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" style="background-color: rgba(55, 147, 223, 0.05);"></div>
     </Fragment>
   </Features2>
 
@@ -202,15 +201,15 @@ const metadata = {
   
   <div slot="before-footer" class="-mt-40">
     <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/jpfm-paixao/30min" style="min-width:320px;height:700px;"></div>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/jpfm-paixao/30min" style="min-width:320px;height:800px;"></div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <!-- Calendly inline widget end -->
 
     <!-- Content Links - Below Calendly -->
     <div class="mx-auto max-w-3xl text-center pb-12">
       <p class="text-muted dark:text-slate-400">
-        Learn more about <a href="/services" class="text-blue-600 dark:text-blue-400 hover:underline">our services and engagement process</a>, 
-        or explore <a href="/about" class="text-blue-600 dark:text-blue-400 hover:underline">our approach and philosophy</a>.
+        Learn more about <a href="/services" class="text-primary dark:text-primary hover:underline">our services and engagement process</a>, 
+        or explore <a href="/about" class="text-primary dark:text-primary hover:underline">our approach and philosophy</a>.
       </p>
     </div>
   </div>
