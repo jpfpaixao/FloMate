@@ -19,7 +19,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: 'Book Discovery Call', href: 'https://calendly.com/jpfm-paixao/30min', target: '_blank' }],
+  actions: [{ text: 'Book Discovery Call', href: 'https://calendly.com/flomate/30min', target: '_blank' }],
 };
 
 export const footerData = {
