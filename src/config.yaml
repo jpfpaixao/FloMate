@@ -61,7 +61,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: 'G-REPLACE_WITH_YOUR_GA4_ID' # Replace with your GA4 measurement ID (format: G-XXXXXXXXXX)
+      id: 'G-F64W7WSZYH' # Replace with your GA4 measurement ID (format: G-XXXXXXXXXX)
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
