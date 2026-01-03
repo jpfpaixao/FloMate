@@ -121,7 +121,7 @@ If you have questions about this Privacy Policy or how we handle your data, plea
 
 **Email**: [info@flomate.co](mailto:info@flomate.co)
 
-**Address**: [Your Business Address]
+**Address**: Rua D. Luisa de Gusmão nº4 1ºDto, 2605-665 Belas
 
 We are committed to working with you to resolve any privacy concerns you may have. We will respond to privacy inquiries within 30 days.
 

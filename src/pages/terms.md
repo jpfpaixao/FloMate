@@ -16,10 +16,7 @@ These Terms are intended to comply with European law, including the General Data
 
 - **Company Name:** FlowMate
 - **Contact Email:** [info@flomate.co](mailto:info@flomate.co)
-- **Business Address:** [To be completed with your address]
-- **Registration Number:** [To be completed]
-- **VAT Number:** [To be completed]
-- **Applicable Jurisdiction:** European Union and applicable member state laws
+- **Business Address:** Rua D. Luisa de Gusmão nº4 1ºDto, 2605-665 Belas
 
 ## 2. Definitions
 
@@ -189,7 +186,7 @@ We may terminate immediately if you:
 
 ### Governing Law
 
-These Terms are governed by the laws of [Your Jurisdiction], without regard to its conflict of law principles.
+These Terms are governed by applicable laws, without regard to its conflict of law principles.
 
 ### Dispute Resolution
 
