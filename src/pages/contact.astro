@@ -2,6 +2,7 @@
 import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import CalendlyWidget from '~/components/CalendlyWidget.astro';
 
 const metadata = {
   title: 'Contact Us',
@@ -103,11 +104,8 @@ const metadata = {
 
   <!-- Calendly Widget *************** -->
 
-  <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+  <div slot="before-footer" class="w-full px-4 py-12 sm:px-6 lg:px-8">
     <h2 class="mb-8 text-center text-3xl font-bold">Pick a time</h2>
-    <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/flomate/30min" style="min-width:320px;height:800px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <!-- Calendly inline widget end -->
+    <CalendlyWidget url="https://calendly.com/flomate/30min" height="800px" />
   </div>
 </Layout>

@@ -4,6 +4,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import CalendlyWidget from '~/components/CalendlyWidget.astro';
 
 const metadata = {
   title: 'Our Services',
@@ -171,10 +172,7 @@ const metadata = {
         <!-- Right Column: Calendly Widget -->
         <div class="flex items-start justify-center">
           <div class="w-full -mt-20">
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/flomate/30min" style="min-width:320px;height:1100px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
+            <CalendlyWidget url="https://calendly.com/flomate/30min" height="1100px" />
           </div>
         </div>
       </div>

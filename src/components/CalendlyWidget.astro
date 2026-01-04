@@ -1,0 +1,25 @@
+---
+interface Props {
+  url?: string;
+  height?: string;
+}
+
+const { url = 'https://calendly.com/flomate/30min', height = '800px' } = Astro.props;
+---
+
+<div class="calendly-widget-container">
+  <div class="calendly-inline-widget" data-url={url} style={`width:100%;min-width:800px;height:${height};`}></div>
+</div>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<style>
+  .calendly-widget-container {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+</style>
