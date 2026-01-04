@@ -17,10 +17,6 @@ metadata:
     follow: true
   openGraph:
     site_name: FlowMate
-    images:
-      - url: 'https://flomate.co/images/flomate-socials.jpg'
-        width: 682
-        height: 512
     type: website
 i18n:
   language: en
